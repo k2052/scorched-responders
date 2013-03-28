@@ -1,6 +1,6 @@
 # So you want to respond to something.
 
-scorched-responders is a collection of responders to dry up your Scorched controllers. It's like magic, only with less magic and more amazement.
+scorched-responders is a collection of responders to dry up your [Scorched](https://github.com/Wardrop/Scorched) controllers. It's like magic, only with less magic and more amazement.
 
 # Installation/Usage
 
