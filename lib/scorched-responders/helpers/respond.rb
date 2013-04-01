@@ -18,7 +18,11 @@ module Scorched
 
           responder.options[:location] = options.shift if options.first.is_a?(String)    
           responder.options.merge!(options.extract_options!)
+
           responder.options[:default_engine] = self.class.render_defaults[:engine]
+          responder.options[:layout]         = self.class.render_defaults[:layout]
+          responder.options[:layout]         = false if mime_type(:json) == preferred_type.to_s || mime_type(:xml) == preferred_type.to_s
+          
           responder.object  = object  
           responder.app     = self
 
